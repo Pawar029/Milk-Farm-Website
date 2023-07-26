@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
+import pic1 from './Images/banner-03.jpg';
 // import { Alert } from 'bootstrap';
 // import { useEffect } from 'react';
 export default function Add_member_form() {
@@ -58,10 +59,13 @@ export default function Add_member_form() {
 
   return (
     <div className="row d-flex justify-content-center">
-      <div className="p-5 col mx-auto">
+      <div className=' p-1 border border-dark rounded-1'>
+        <img src={pic1} className="d-block w-100" alt="..." />
+      </div>
+      <div className="p-4 col mx-auto">
         <div className="row mb-3 align-content-center">
           <label htmlFor="inputName" className="col-sm-2 col-form-label fs-4">
-            Name{" "}
+            Name :
           </label>
           <div className="col-sm-6">
             {/* id="inputName" name="name" value={name}  */}
@@ -81,7 +85,7 @@ export default function Add_member_form() {
             htmlFor="inputPhone"
             className="col-sm-2 col-form-label fs-4 fw-normal"
           >
-            Phone No.
+            Phone No. :
           </label>
           <div className="col-sm-6">
             <input
@@ -97,7 +101,7 @@ export default function Add_member_form() {
         </div>
         <div className="row mb-3">
           <label htmlFor="inputEmail3" className="col-sm-2 col-form-label fs-4">
-            Email
+            Email :
           </label>
           <div className="col-sm-6">
             <input
@@ -116,7 +120,7 @@ export default function Add_member_form() {
             htmlFor="inputAddress"
             className="col-sm-2 col-form-label fs-4"
           >
-            Address
+            Address :
           </label>
           <div className="col-sm-6">
             <textarea
@@ -132,7 +136,7 @@ export default function Add_member_form() {
 
         <fieldset className="row mb-3">
           <legend className="col-form-label col-sm-2 pt-0 fs-4">
-            Milk Type
+            Milk Type :
           </legend>
           <div className="col-sm-10">
             <div className="form-check">

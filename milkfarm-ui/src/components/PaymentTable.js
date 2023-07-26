@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
+import pic1 from './Images/horizonatal1.jpg';
 
 export default function PaymentTable(props) {
 
@@ -14,12 +15,12 @@ export default function PaymentTable(props) {
         Axios.get('http://localhost:8000/payments/', { params: { start_date: start_date, end_date: end_date } })
             .then((res) =>
                 setMyData(res.data)
-                )
-                // console.log(myData)
-    }, [ start_date, end_date]);
+            )
+        // console.log(myData)
+    }, [start_date, end_date]);
 
     // const [error, setError] = useState('')
-     
+
     // function handle(e) {
     //     const newdata = { ...data }
     //     newdata[e.target.id] = e.target.value
@@ -30,10 +31,13 @@ export default function PaymentTable(props) {
 
     return (
         <div className='row d-flex justify-content-center '>
-            <div className='p-5 col mx-auto'>
-                <h3 value={props.start_date}   id="date">Start Date :-  {props.start_date}</h3>
-                <h3 value={props.end_date}   id="shift">End Date :-  {props.end_date}</h3>
-                <br />
+            <div className='p-1 border border-dark rounded-1'>
+                <img src={pic1} className="d-block w-100  broder broder-info" alt="..." />
+            </div>
+            <div className='p-2 col mx-auto'>
+                <h3 value={props.start_date} id="date">Start Date :-  {props.start_date}</h3>
+                <h3 value={props.end_date} id="shift">End Date :-  {props.end_date}</h3>
+
             </div>
             <div>
                 <h1>List of Members</h1>
@@ -68,4 +72,4 @@ export default function PaymentTable(props) {
 
 
 
- 
+

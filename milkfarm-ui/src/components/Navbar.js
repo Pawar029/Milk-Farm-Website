@@ -5,8 +5,8 @@ export default function Navbar() {
 
 
   return (
-    <div >
-      <nav className="navbar navbar-expand-lg bg-light">
+    <div className='p-2 mb-2 bg-success-subtle border border-success '>
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <Link className="navbar-brand fs-1 fw-semibold" to="/">Milk Farm</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

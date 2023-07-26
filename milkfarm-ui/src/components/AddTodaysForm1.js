@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import Axios from "axios";
-
+import pic1 from './Images/banner-01.jpg'
 export default function AddTodaysForm1(props) {
 
     // const url = "http://localhost:8000/todaysdata/"
@@ -46,7 +46,10 @@ export default function AddTodaysForm1(props) {
 
     return (
         <div className='row d-flex justify-content-center'>
-            <div className='p-5 col mx-auto'>
+            <div className=' p-1 border border-dark rounded-1'>
+                <img src={pic1} className="d-block w-100" alt="..." />
+            </div>
+            <div className='p-4 col mx-auto'>
 
                 <div className="row mb-3 align-content-center"  >
                     <label htmlFor="inputName" className="col-sm-2 col-form-label fs-4">Date :</label>
@@ -56,7 +59,7 @@ export default function AddTodaysForm1(props) {
                 </div>
 
                 <fieldset className="row mb-3">
-                    <legend className="col-form-label col-sm-2 pt-0 fs-4">Milk Type</legend>
+                    <legend className="col-form-label col-sm-2 pt-0 fs-4">Shift :</legend>
                     <div className="col-sm-10" >
                         <div className="form-check">
                             <input className="form-check-input" type="radio" name="gridRadios" value="morning" checked={selectedValue === "morning"} onChange={handleChange} />
@@ -72,7 +75,7 @@ export default function AddTodaysForm1(props) {
                         </div>
                     </div>
                 </fieldset>
-                
+
                 <button type="submit" className="btn btn-primary" onClick={(e) => SaveData(e)} onSubmit={handleSubmit}>Save</button>
 
             </div>

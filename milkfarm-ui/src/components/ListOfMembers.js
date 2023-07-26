@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import axios from 'axios';
 import { useState } from 'react';
+import pic1 from './Images/horizonatal1.jpg';
 
 
 export default function ListOfMembers() {
@@ -19,8 +20,12 @@ export default function ListOfMembers() {
 
   return (
     <>
+    <div className='p-1 border border-dark rounded-1'>
+    <img src={pic1} className="d-block w-100  broder broder-info" alt="..." />
+    </div>
       <h1>List of Members</h1>
-      <table className="table">
+      <div className='border border-dark'>
+      <table className="table table-striped table-hover">
         <thead>
           <tr>
             <th scope="col">Member ID</th>
@@ -49,6 +54,7 @@ export default function ListOfMembers() {
             
         ))}
       </table>
+      </div>
     </>
   )
 }
