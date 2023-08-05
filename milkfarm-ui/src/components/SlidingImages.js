@@ -89,7 +89,7 @@ export default function SlidingImages() {
               </div>
               <div className='card col-md mt-md-4 m-2 p-3 border border-info rounded-3'>
               <div className='card-body'>
-                  <p className='text-dark fs-4 fw-semibold text-center'>Coffee </p>
+                  <p className='text-dark fs-4 fw-semibold text-center'>Ice Cream </p>
                 </div>
                 <img className='card-img-top' src={lower_pic4} alt="img" />
                 {/* <div className='card-body'>
